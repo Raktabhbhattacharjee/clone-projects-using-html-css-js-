@@ -1,0 +1,139 @@
+/* Resetting default browser styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* More intuitive box model */
+}
+
+body {
+  font-family: sans-serif; /* A more standard and readable font */
+  background-color: black; /* Netflix's dark background */
+  color: white; /* Default text color */
+}
+
+.main {
+  background-image: url('bg.jpg'); /* Assuming you have a background image named bg.jpg */
+  background-size: cover; /* Ensures the background image covers the entire area */
+  background-position: center; /* Centers the background image */
+  min-height: 80vh; /* Ensures the main section takes up at least 80% of the viewport height */
+  position: relative; /* To position elements within it */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Distributes space between logo and buttons */
+  align-items: center; /* Vertically aligns logo and buttons */
+  padding: 20px 5%; /* More standard padding - top/bottom and left/right */
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+nav img {
+  width: 100px; /* Slightly adjusted logo size */
+}
+
+.logo {
+  z-index: 10; /* Keeps the logo above other potentially overlapping elements */
+}
+
+/* Button Group */
+.btn-group {
+  display: flex;
+  gap: 10px; /* Slightly increased gap for better spacing */
+}
+
+/* Button Styling */
+.btn,
+.btn-red-sm {
+  padding: 10px 20px; /* Slightly increased padding for better touch targets */
+  font-weight: 500;
+  font-size: 1rem; /* Using rem for better scalability */
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* More specific transition */
+  border: none; /* Removing default button border */
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.5); /* Darker transparent background for better contrast */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Slightly less intense white border */
+}
+
+.btn-red-sm {
+  background-color: #e50914; /* Standard Netflix red */
+  font-weight: 600;
+}
+
+/* Hover Effects */
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn-red-sm:hover {
+  background-color: #b81d24; /* Darker shade of Netflix red on hover */
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  gap: 20px; /* Increased gap for better spacing */
+  position: absolute; /* To position it within the .main container */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for the element's own size */
+  width: 90%; /* Give it some horizontal padding on smaller screens */
+  max-width: 800px; /* Limit the width on larger screens */
+  z-index: 10; /* Ensure it's above the background */
+  margin-top: 50px;
+}
+
+.hero h1 {
+  font-size: 3rem; /* Larger, more impactful heading */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  width: 100%; /* Make it take full width on smaller screens */
+  max-width: 600px; /* Limit the width of the search box */
+}
+
+.search-box input {
+  flex-grow: 1; /* Allows the input to take up available space */
+  padding: 15px 20px; /* Increased padding for better input area */
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background for input */
+  color: white;
+}
+
+.search-box input::placeholder {
+  color: #ccc; /* Light gray placeholder text */
+}
+
+.btn-red {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-red:hover {
+  background-color: #b81d24;
+}
