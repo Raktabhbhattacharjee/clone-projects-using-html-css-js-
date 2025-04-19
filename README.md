@@ -1,3 +1,3 @@
-# clone-projects-using-html-css-js-
-nTFLIX CLONE HTML CSS 
+NEtflix clone html css 
+NETFLIX CLONE HTML CSS 
 
